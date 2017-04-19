@@ -6,11 +6,15 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 
+import com.ibm.wuhan.bus.dao.UserDao;
 import com.ibm.wuhan.bus.domain.User;
 import com.ibm.wuhan.bus.utils.XmlUtils;
 
-public class UserDaoImpl {
+public class UserDaoImpl implements UserDao {
 
+	/* (non-Javadoc)
+	 * @see com.ibm.wuhan.bus.dao.impl.UserDao#add(com.ibm.wuhan.bus.domain.User)
+	 */
 	public void add(User user) {
 
 		try {
@@ -36,6 +40,9 @@ public class UserDaoImpl {
 	}
 
 	//查找用户名密码是否匹配
+	/* (non-Javadoc)
+	 * @see com.ibm.wuhan.bus.dao.impl.UserDao#find(java.lang.String, java.lang.String)
+	 */
 	public User find(String username, String password) {
 
 		try {
@@ -70,6 +77,9 @@ public class UserDaoImpl {
 	}
 
 	// 查找要注册用户是否已经存在
+	/* (non-Javadoc)
+	 * @see com.ibm.wuhan.bus.dao.impl.UserDao#find(java.lang.String)
+	 */
 	public boolean find(String username) {
 		try {
 			Document document = XmlUtils.getDocument();
