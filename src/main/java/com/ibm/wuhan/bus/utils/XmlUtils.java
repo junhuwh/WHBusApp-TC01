@@ -18,7 +18,18 @@ public class XmlUtils {
 	private static String filepath;
 
 	static {
-		filepath = XmlUtils.class.getClassLoader().getResource("users.xml").getPath();
+		
+		try {
+
+			filepath = XmlUtils.class.getClassLoader().getResource("users.xml").getPath();
+			filepath= filepath.replaceAll("%20", " ");
+//			System.out.println(filepath);
+		} catch (Exception e) {
+			// TODO: handle exception
+		e.printStackTrace();
+		}
+	
+	
 	}
 
 	public static Document getDocument() throws DocumentException {

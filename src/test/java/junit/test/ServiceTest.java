@@ -18,10 +18,10 @@ public class ServiceTest {
 		User user = new User();
 		user.setBirthday(new Date());
 		user.setEmail("test@cc.com");
-		user.setId("12343214");
-		user.setNickname("吃饭");
-		user.setPassword("123");
-		user.setUsername("qqq");
+		user.setId("121221212");
+		user.setNickname("111吃饭");
+		user.setPassword("123321");
+		user.setUsername("aq12");
 
 		BusinessServiceImpl service = new BusinessServiceImpl();
 		try {
