@@ -29,6 +29,8 @@ body{ text-align:center}
 	
 	<br/><br/><br/>
 	<hr>
+	
+	<a href="book/ListBookServlet" >浏览书籍</a>
 	</div>
 </body>
 </html>
