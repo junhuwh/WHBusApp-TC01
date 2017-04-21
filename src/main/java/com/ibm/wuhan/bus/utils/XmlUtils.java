@@ -16,14 +16,14 @@ public class XmlUtils {
 	// 通过类装载器得到文件位置 然后通过读写文件方式操作
 
 	private static String filepath;
+	private static String filepath2;
 
 	static {
 
 		try {
 
 			// filepath = System.getProperty("/WEB-INF/users.xml");
-			// filepath =
-			// XmlUtils.class.getClassLoader().getResource("users.xml").getPath();
+			filepath2 = XmlUtils.class.getClassLoader().getResource("users.xml").getPath();
 			// filepath= filepath.replaceAll("%20", " ");
 			filepath = XmlUtils.class.getClassLoader().getResource("/").getPath();
 			filepath = filepath + "users.xml";
@@ -31,6 +31,8 @@ public class XmlUtils {
 
 			//filepath = ".\\users.xml";
 			 System.out.println(filepath);
+			 System.out.println(filepath2);
+
 			// System.out.println(System.getProperty("user.dir"));
 
 			// System.out.println(application.getRealPath("/WEB-INF/users.xml"));
