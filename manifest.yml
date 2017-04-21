@@ -7,3 +7,6 @@ applications:
   host: WHBusApp-TC01
   disk_quota: 1024M
   buildpack: java_buildpack
+  env:
+    IBM_LIBERTY_LICENSE: L-JTHS-95XRL8
+    JVM: openjdk
