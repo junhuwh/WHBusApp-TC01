@@ -18,24 +18,28 @@ public class XmlUtils {
 	private static String filepath;
 
 	static {
-		
+
 		try {
 
-			//filepath = System.getProperty("/WEB-INF/users.xml");
-			filepath = XmlUtils.class.getClassLoader().getResource("users.xml").getPath();
-//			filepath= filepath.replaceAll("%20", " ");
-//			filepath = "/users.xml";
-		//	System.out.println(filepath);
-		//	System.out.println(System.getProperty("user.dir"));
+			// filepath = System.getProperty("/WEB-INF/users.xml");
+			// filepath =
+			// XmlUtils.class.getClassLoader().getResource("users.xml").getPath();
+			// filepath= filepath.replaceAll("%20", " ");
+			filepath = XmlUtils.class.getClassLoader().getResource("/").getPath();
+			filepath = filepath + "users.xml";
+			//filepath= filepath.replaceAll("%20", " ");
 
-			//System.out.println(application.getRealPath("/WEB-INF/users.xml"));
-			
+			//filepath = ".\\users.xml";
+			 System.out.println(filepath);
+			// System.out.println(System.getProperty("user.dir"));
+
+			// System.out.println(application.getRealPath("/WEB-INF/users.xml"));
+
 		} catch (Exception e) {
 			// TODO: handle exception
-		e.printStackTrace();
+			e.printStackTrace();
 		}
-	
-	
+
 	}
 
 	public static Document getDocument() throws DocumentException {
@@ -50,9 +54,9 @@ public class XmlUtils {
 
 		OutputFormat format = OutputFormat.createPrettyPrint();
 		format.setEncoding("UTF-8");
-		XMLWriter writer = new XMLWriter(new FileOutputStream(filepath),format);
+		XMLWriter writer = new XMLWriter(new FileOutputStream(filepath), format);
 		writer.write(document);
 		writer.close();
-		
+
 	}
 }
