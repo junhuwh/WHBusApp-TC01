@@ -21,9 +21,15 @@ public class XmlUtils {
 		
 		try {
 
+			//filepath = System.getProperty("/WEB-INF/users.xml");
 			filepath = XmlUtils.class.getClassLoader().getResource("users.xml").getPath();
-			filepath= filepath.replaceAll("%20", " ");
-//			System.out.println(filepath);
+//			filepath= filepath.replaceAll("%20", " ");
+//			filepath = "/users.xml";
+		//	System.out.println(filepath);
+		//	System.out.println(System.getProperty("user.dir"));
+
+			//System.out.println(application.getRealPath("/WEB-INF/users.xml"));
+			
 		} catch (Exception e) {
 			// TODO: handle exception
 		e.printStackTrace();
