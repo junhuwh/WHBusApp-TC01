@@ -19,7 +19,7 @@ public class UserDaoTest {
 		user.setId("12343214");
 		user.setNickname("吃饭");
 		user.setPassword("123");
-		user.setUsername("bbb");
+		user.setUsername("ccc");
 		
 		UserDao dao = new UserDaoImpl();
 		dao.add(user);

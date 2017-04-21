@@ -21,7 +21,7 @@ public class ServiceTest {
 		user.setId("121221212");
 		user.setNickname("111吃饭");
 		user.setPassword("123321");
-		user.setUsername("aq12");
+		user.setUsername("qqq");
 
 		BusinessServiceImpl service = new BusinessServiceImpl();
 		try {
