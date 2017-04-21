@@ -2,7 +2,8 @@ package com.ibm.wuhan.bus.utils;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.Base64;
+
+import org.apache.commons.codec.binary.Base64;
 
 public class ServiceUtils {
 
@@ -15,8 +16,8 @@ public class ServiceUtils {
 		try {
 			MessageDigest md = MessageDigest.getInstance("md5");
 			byte md5[] = md.digest(message.getBytes());
-			
-			String asB64 = Base64.getEncoder().encodeToString(md5);
+			String asB64 = Base64.encodeBase64(md5).toString();
+			//String asB64 = Base64.getEncoder().encodeToString(md5);
 			
 			return asB64;
 			
