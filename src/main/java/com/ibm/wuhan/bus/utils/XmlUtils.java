@@ -27,7 +27,7 @@ public class XmlUtils {
 			// filepath= filepath.replaceAll("%20", " ");
 			filepath = XmlUtils.class.getClassLoader().getResource("/").getPath();
 			filepath = filepath + "users.xml";
-			//filepath= filepath.replaceAll("%20", " ");
+			filepath= filepath.replaceAll("%20", " ");
 
 			//filepath = ".\\users.xml";
 			 System.out.println(filepath);
