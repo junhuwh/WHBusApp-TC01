@@ -14,11 +14,17 @@ public class ServiceUtils {
 	public static String md5(String message){
 		
 		try {
-			MessageDigest md = MessageDigest.getInstance("md5");
-			byte md5[] = md.digest(message.getBytes());
-			String asB64 = Base64.encodeBase64(md5).toString();
-			//String asB64 = Base64.getEncoder().encodeToString(md5);
 			
+			MessageDigest md = MessageDigest.getInstance("MD5");
+			byte md5[] = md.digest(message.getBytes());
+			 Base64 base64=new Base64(); 
+			String asB64 = base64.encode(md5).toString();
+			//String asB64 = Base64.getEncoder().encodeToString(md5);
+//	        byte[] b=plainText.getBytes();  
+//	        Base64 base64=new Base64();  
+//	        b=base64.encode(b);  
+//	        String s=new String(b);  
+//	        return s;
 			return asB64;
 			
 		} catch (NoSuchAlgorithmException e) {
@@ -29,4 +35,20 @@ public class ServiceUtils {
 		
 		return null;
 	}
+	
+	 public static String encodeStr(String plainText){  
+	        byte[] b=plainText.getBytes();  
+	        Base64 base64=new Base64();  
+	        b=base64.encode(b);  
+	        String s=new String(b);  
+	        return s;  
+	    }  
+	      
+	    public static String decodeStr(String encodeStr){  
+	        byte[] b=encodeStr.getBytes();  
+	        Base64 base64=new Base64();  
+	        b=base64.decode(b);  
+	        String s=new String(b);  
+	        return s;  
+	    }  
 }

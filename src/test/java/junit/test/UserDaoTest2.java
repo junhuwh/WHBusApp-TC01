@@ -8,7 +8,7 @@ import com.ibm.wuhan.bus.dao.UserDao;
 import com.ibm.wuhan.bus.dao.impl.UserDaoImpl;
 import com.ibm.wuhan.bus.domain.User;
 
-public class UserDaoTest {
+public class UserDaoTest2 {
 
 	@Test
 	public void testAdd() {

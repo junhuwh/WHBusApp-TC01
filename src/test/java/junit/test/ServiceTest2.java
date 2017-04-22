@@ -10,7 +10,7 @@ import com.ibm.wuhan.bus.domain.User;
 import com.ibm.wuhan.bus.exception.UserExistExcepiton;
 import com.ibm.wuhan.bus.service.impl.BusinessServiceImpl;
 
-public class ServiceTest {
+public class ServiceTest2 {
 
 	@Test
 	public void testRegister() {
@@ -20,8 +20,8 @@ public class ServiceTest {
 		user.setEmail("test@cc.com");
 		user.setId("121221212");
 		user.setNickname("111吃饭");
-		user.setPassword("123321");
-		user.setUsername("qqq");
+		user.setPassword("123");
+		user.setUsername("qq1aq1");
 
 		BusinessServiceImpl service = new BusinessServiceImpl();
 		try {
@@ -38,7 +38,7 @@ public class ServiceTest {
 	@Test
 	public void testLogin() {
 		BusinessServiceImpl service = new BusinessServiceImpl();
-		User user = service.login("qqq", "123");
+		User user = service.login("123", "123");
 		System.out.println(user);
 	}
 
