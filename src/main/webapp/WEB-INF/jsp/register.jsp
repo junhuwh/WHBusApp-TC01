@@ -8,7 +8,7 @@
 <script src="js/laydate/laydate.js"></script>
 <style> 
 body{ text-align:center} 
-.div{ margin:0 auto; width:400px; height:100px} 
+.div{ margin:0 auto; width:450px; height:300px} 
  
 </style> 
 </head>
@@ -19,34 +19,39 @@ body{ text-align:center}
 		<table class="formtable">
 			<tr>
 				<td class="td1">用户名：</td>
-				<td><input class="userinput" type="text" name="username" value="${form.username}">
-					<span class="message">${form.errors.username }</span></td>
+				<td><input class="userinput" type="text" name="username" value="${form.username}"></td>
+				<td>	<span class="message">${form.errors.username }</span></td>
 			</tr>
 			<tr>
 				<td class="td1">密码：</td>
-				<td><input class="userinput" type="password" name="password">
+				<td><input class="userinput" type="password" name="password"></td>
+				<td>
 					<span class="message">${form.errors.password }</span></td>
 			</tr>
 			<tr>
 				<td class="td1">确认密码：</td>
-				<td><input class="userinput" type="password" name="password2">
+				<td><input class="userinput" type="password" name="password2"></td>
+				<td>
 					<span class="message">${form.errors.password2 }</span></td>
 			</tr>
 			<tr>
 				<td class="td1">邮箱：</td>
-				<td><input class="userinput" type="text" name="email" value="${form.email}">
+				<td><input class="userinput" type="text" name="email" value="${form.email}"></td>
+				<td>
 					<span class="message">${form.errors.email }</span></td>
 			</tr>
 			<tr>
 				<td class="td1">生日：</td>
 				<td><input class="userinput" type="text" name="birthday" value="${form.birthday}"
-					onclick="laydate()"> <span class="message">${form.errors.birthday }</span>
+					onclick="laydate()"></td>
+				<td> <span class="message">${form.errors.birthday }</span>
 				</td>
 			</tr>
 			<tr>
 				<td class="td1">昵称：</td>
 				<td><input class="userinput" type="text" name="nickname" value="${form.nickname}">
-					<span class="message">${form.errors.nickname }</span></td>
+					</td>
+				<td><span class="message">${form.errors.nickname }</span></td>
 			</tr>
 			<tr>
 				<td class="td1">验证码：</td>

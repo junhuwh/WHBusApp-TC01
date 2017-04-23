@@ -6,7 +6,7 @@
 <head>
 <style> 
 body{ text-align:center} 
-.div{ margin:0 auto; width:400px; height:100px} 
+.div{ margin:0 auto; width:600px; height:400px} 
  
 </style> 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
