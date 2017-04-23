@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <users>
-	<user id="781273" username="aaa" password="ICy5YqxZB1uWSwcVLSNLcA==" email="test@sss.com" birthday="1999-11-21" nickname="小胖"  />
-  <user id="121221212" username="qqq" password="[B@2cb4c3ab" email="test@cc.com" birthday="2017-4-21 16:45:01" nickname="111吃饭"/> 
-  <user id="121221212" username="q1" password="[B@2cb4c3ab" email="test@cc.com" birthday="2017-4-21 16:45:01" nickname="111吃饭"/> 
-  <user id="121221212" username="q2" password="[B@2cb4c3ab" email="test@cc.com" birthday="2017-4-21 16:45:01" nickname="111吃饭"/> 
-  <user id="121221212" username="q3" password="[B@2cb4c3ab" email="test@cc.com" birthday="2017-4-21 16:45:01" nickname="111吃饭"/> 
+	<user id="781273" username="aaa" password="MjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzA=" email="test@sss.com" birthday="1999-11-21" nickname="小胖"  />
+  <user id="121221212" username="qqq" password="MjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzA=" email="test@cc.com" birthday="2017-4-21 16:45:01" nickname="111吃饭"/> 
+  <user id="121221212" username="q1" password="MjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzA=" email="test@cc.com" birthday="2017-4-21 16:45:01" nickname="111吃饭"/> 
+  <user id="121221212" username="q2" password="MjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzA=" email="test@cc.com" birthday="2017-4-21 16:45:01" nickname="111吃饭"/> 
+  <user id="121221212" username="q3" password="MjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzA=" email="test@cc.com" birthday="2017-4-21 16:45:01" nickname="111吃饭"/> 
+ <user id="57aaca52-3fb5-40a3-a2a8-c91fbbfe45dd" username="zzz" password="MjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzA=" email="123@23.2" birthday="2017-3-27 0:00:00" nickname="123"/>
   </users>
