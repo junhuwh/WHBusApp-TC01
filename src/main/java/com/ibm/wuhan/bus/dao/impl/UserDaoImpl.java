@@ -1,6 +1,7 @@
 package com.ibm.wuhan.bus.dao.impl;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -27,7 +28,17 @@ public class UserDaoImpl implements UserDao {
 			user_tag.addAttribute("username", user.getUsername());
 			user_tag.addAttribute("password", user.getPassword());
 			user_tag.addAttribute("email", user.getEmail());
-			user_tag.addAttribute("birthday", user.getBirthday() == null ? "" : user.getBirthday().toLocaleString());
+			
+			Date bdate = user.getBirthday();
+			String rdate = bdate.toString();
+			if (bdate == null || bdate.equals("")) {
+				rdate="";
+			} else {
+				SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+				rdate = df.format(bdate);
+			}
+			
+			user_tag.addAttribute("birthday", rdate);
 			user_tag.addAttribute("nickname", user.getNickname());
 
 			XmlUtils.write2Xml(document);

@@ -29,8 +29,14 @@ body{ text-align:center}
 	
 	<br/><br/><br/>
 	<hr>
+	<a href="book/ListBookServlet" >浏览书籍</a>	<br/><br/><br/>
 	
-	<a href="book/ListBookServlet" >浏览书籍</a>
+	
+	<hr>
+	
+	<a href="bus/ListBusLineInfoServlet" >查看班车信息</a>
 	</div>
+	
+	<a href="demo01.jsp">防盗链测试</a>
 </body>
 </html>
